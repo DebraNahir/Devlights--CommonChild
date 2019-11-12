@@ -1,3 +1,21 @@
+Common Child
+A string is said to be a child of a another string if it can be formed by deleting 0 or more characters from the other string. Give two strings of equal length, what's the longest string that can be constructed such that it is a child of both?
+For example, ABCD and ABDC have two children whit maximum length 3, ABC and ABD. They can be formed by eliminating either the D or C from both strings. Note thet we will not consider ABCD as a common child because we can't rearrange characters and ABCD <> ABDC.
+
+Input Format
+There is one line with two space-separated strings, s1 and s2.
+
+Constraints
+-1<=|s1|, |s2|<=5000
+-All characters are upper case in the range ascii[A-Z]
+
+Output Format
+Print the length of the longest string s, such that s is a child of both s1 and s1.
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
