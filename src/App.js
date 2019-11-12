@@ -2,15 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 
-function String(props){
-  const string= this.state.string;
-  console.log(string);
-  return(
-    <input className='string' onChange={props.target.onChange}>
-      {props.string};
-    </input>
-  );
-}
 
 function CommonChild(string){
   var res= string.toUpperCase();
@@ -35,8 +26,7 @@ function CommonChild(string){
           } else {n++;};
         }
       };
-      let status;
-      return(status = salida.length);
+      return(salida.length);
 
     }
   } else {alert("Just write two strings")};
@@ -54,9 +44,9 @@ class App extends React.Component{
     this.setState({value:event.target.value});
   }
   handleClick(event){
-    let salida2;
-    salida2 = 'Length child string is: ' + CommonChild(this.state.value);
-    this.setState({result:salida2});
+    let status;
+    status = 'Length child string is: ' + CommonChild(this.state.value);
+    this.setState({result:status});
   }
 
   render(){
